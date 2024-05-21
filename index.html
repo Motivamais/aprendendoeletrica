@@ -8,7 +8,13 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin: 20px;
+            background-image: url('https://example.com/imagem-de-fundo.jpg'); 
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat; 
+            height: 100vh; 
+            margin: 0; 
+            padding: 0; 
         }
         button {
             display: block;
@@ -29,8 +35,8 @@
 </head>
 <body>
     <h1>Aprendendo Elétrica</h1>
-    <button onclick="showImage('motor.png')">Shirley/linda</button>
-    <button onclick="showImage('contatora.jpeg')">Contatora</button>
+    <button onclick="showImage('motor.jpg')">Motor Elétrico</button>
+    <button onclick="showImage('contatora.jpg')">Contatora</button>
     <button onclick="showImage('fusivel.jpg')">Fusível</button>
     <button onclick="showImage('disjuntor.jpg')">Disjuntor</button>
     <button onclick="showImage('botoeiras.jpg')">Botoeiras</button>
