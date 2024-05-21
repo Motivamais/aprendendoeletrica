@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Elétrica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        button {
+            display: block;
+            width: 200px;
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #image-container {
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo Elétrica</h1>
+    <button onclick="showImage('https://brggeradores.com.br/wp-content/uploads/2023/11/qual-a-funcao-de-um-gerador-eletrico-em-casa.png')">Motor Elétrico</button>
+    <button onclick="showImage('contatora.jpg')">Contatora</button>
+    <button onclick="showImage('fusivel.jpg')">Fusível</button>
+    <button onclick="showImage('disjuntor.jpg')">Disjuntor</button>
+    <button onclick="showImage('botoeiras.jpg')">Botoeiras</button>
+    <div id="image-container"></div>
+
+    <script>
+        function showImage(imageName) {
+            const imageUrl = `https://raw.githubusercontent.com/SEU_USUARIO/SEU_REPOSITORIO/main/${imageName}`;
+            document.getElementById('image-container').innerHTML = `<img src="${imageUrl}" alt="${imageName}">`;
+        }
+    </script>
+</body>
+</html>
