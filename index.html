@@ -29,7 +29,7 @@
 </head>
 <body>
     <h1>Aprendendo Elétrica</h1>
-    <button onclick="showImage('https://brggeradores.com.br/wp-content/uploads/2023/11/qual-a-funcao-de-um-gerador-eletrico-em-casa.png')">Motor Elétrico</button>
+    <button onclick="showImage('motor.png')">Motor Elétrico</button>
     <button onclick="showImage('contatora.jpg')">Contatora</button>
     <button onclick="showImage('fusivel.jpg')">Fusível</button>
     <button onclick="showImage('disjuntor.jpg')">Disjuntor</button>
@@ -38,7 +38,7 @@
 
     <script>
         function showImage(imageName) {
-            const imageUrl = `https://raw.githubusercontent.com/SEU_USUARIO/SEU_REPOSITORIO/main/${imageName}`;
+            const imageUrl = `https://raw.githubusercontent.com/Motivamais/aprendendoeletrica/main/${imageName}`;
             document.getElementById('image-container').innerHTML = `<img src="${imageUrl}" alt="${imageName}">`;
         }
     </script>
